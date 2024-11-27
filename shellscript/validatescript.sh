@@ -1,6 +1,8 @@
 #!/bin/bash
 
-validate(){
+USERID=$(id -u)
+
+VALIDATE(){
     if [ $1 -ne 0 ]
     then
         echo  "$2...failure"
@@ -8,7 +10,7 @@ validate(){
         echo "$2...success"
     fi
 }
-USERID=$(id -u)
+
 if [ $USERID -ne 0 ]
 then
     echo " please run this script with root user"
@@ -16,7 +18,7 @@ then
 fi
 
 yum install mysql -y
-validate $? "installing mysql"
+VALIDATE $? "installing mysql"
 
 yum install postfix -y
-validate $? "installing postfix"
+VALIDATE $? "installing postfix"
