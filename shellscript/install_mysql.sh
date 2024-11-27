@@ -6,7 +6,7 @@ then
     exit 1
 fi
 
-yum install mysqlll -y
+yum install mysql -y
 if [ $? -ne 0 ]
 then    
     echo "installation of mysql is failure"
