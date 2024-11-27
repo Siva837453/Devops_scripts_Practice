@@ -1,0 +1,112 @@
+2024-05-17 07:59:50 siva-remote-state
+2024-05-18 16:56:57 sivadevops-dev
+2024-05-18 16:57:21 sivadevops-prod
+{
+    "Reservations": []
+}
+{
+    "Functions": []
+}
+{
+    "Users": [
+        {
+            "Path": "/",
+            "UserName": "ansible",
+            "UserId": "AIDA2UC3FTLW5KGTYN7ZP",
+            "Arn": "arn:aws:iam::730335648493:user/ansible",
+            "CreateDate": "2024-05-12T09:43:56+00:00"
+        },
+        {
+            "Path": "/",
+            "UserName": "Sivakumar@Allaka",
+            "UserId": "AIDA2UC3FTLWUUMTMQGRU",
+            "Arn": "arn:aws:iam::730335648493:user/Sivakumar@Allaka",
+            "CreateDate": "2024-04-02T04:25:54+00:00",
+            "PasswordLastUsed": "2024-10-08T08:49:54+00:00"
+        },
+        {
+            "Path": "/",
+            "UserName": "terraform",
+            "UserId": "AIDA2UC3FTLWWP7E6AKLP",
+            "Arn": "arn:aws:iam::730335648493:user/terraform",
+            "CreateDate": "2024-05-13T09:01:27+00:00"
+        },
+        {
+            "Path": "/",
+            "UserName": "terraform-1",
+            "UserId": "AIDA2UC3FTLW5VRLBMEKI",
+            "Arn": "arn:aws:iam::730335648493:user/terraform-1",
+            "CreateDate": "2024-05-19T10:45:01+00:00"
+        },
+        {
+            "Path": "/",
+            "UserName": "terraform0",
+            "UserId": "AIDA2UC3FTLW3GN37WAHE",
+            "Arn": "arn:aws:iam::730335648493:user/terraform0",
+            "CreateDate": "2024-05-30T04:51:04+00:00"
+        },
+        {
+            "Path": "/",
+            "UserName": "terraformbalu",
+            "UserId": "AIDA2UC3FTLWUXXUNKQOP",
+            "Arn": "arn:aws:iam::730335648493:user/terraformbalu",
+            "CreateDate": "2024-05-30T04:54:02+00:00"
+        }
+    ]
+}
+2024-05-17 07:59:50 siva-remote-state
+2024-05-18 16:56:57 sivadevops-dev
+2024-05-18 16:57:21 sivadevops-prod
+{
+    "Reservations": []
+}
+{
+    "Functions": []
+}
+{
+    "Users": [
+        {
+            "Path": "/",
+            "UserName": "ansible",
+            "UserId": "AIDA2UC3FTLW5KGTYN7ZP",
+            "Arn": "arn:aws:iam::730335648493:user/ansible",
+            "CreateDate": "2024-05-12T09:43:56+00:00"
+        },
+        {
+            "Path": "/",
+            "UserName": "Sivakumar@Allaka",
+            "UserId": "AIDA2UC3FTLWUUMTMQGRU",
+            "Arn": "arn:aws:iam::730335648493:user/Sivakumar@Allaka",
+            "CreateDate": "2024-04-02T04:25:54+00:00",
+            "PasswordLastUsed": "2024-10-08T08:49:54+00:00"
+        },
+        {
+            "Path": "/",
+            "UserName": "terraform",
+            "UserId": "AIDA2UC3FTLWWP7E6AKLP",
+            "Arn": "arn:aws:iam::730335648493:user/terraform",
+            "CreateDate": "2024-05-13T09:01:27+00:00"
+        },
+        {
+            "Path": "/",
+            "UserName": "terraform-1",
+            "UserId": "AIDA2UC3FTLW5VRLBMEKI",
+            "Arn": "arn:aws:iam::730335648493:user/terraform-1",
+            "CreateDate": "2024-05-19T10:45:01+00:00"
+        },
+        {
+            "Path": "/",
+            "UserName": "terraform0",
+            "UserId": "AIDA2UC3FTLW3GN37WAHE",
+            "Arn": "arn:aws:iam::730335648493:user/terraform0",
+            "CreateDate": "2024-05-30T04:51:04+00:00"
+        },
+        {
+            "Path": "/",
+            "UserName": "terraformbalu",
+            "UserId": "AIDA2UC3FTLWUXXUNKQOP",
+            "Arn": "arn:aws:iam::730335648493:user/terraformbalu",
+            "CreateDate": "2024-05-30T04:54:02+00:00"
+        }
+    ]
+}
