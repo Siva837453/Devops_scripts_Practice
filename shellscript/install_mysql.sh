@@ -14,7 +14,7 @@ else
     echo "installation of mysql is success"
 fi
 
-yum install postfix -y
+yum install postfixxx -y
 if [ $? -ne 0 ]
 then    
     echo "installation of postfix is failure"
