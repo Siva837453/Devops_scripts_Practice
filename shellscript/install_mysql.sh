@@ -3,7 +3,7 @@ USERID=$(id -u)
 if [ $USERID -ne 0 ]
 then
     echo " please run this script with root user"
-    exit1
+    exit 1
 fi
 
 yum install mysql -y
