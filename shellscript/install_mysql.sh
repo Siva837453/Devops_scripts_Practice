@@ -6,7 +6,7 @@ then
     exit 1
 fi
 
-yum install mysql -y
+yum install mysqlll -y
 if [ $? -ne 0 ]
 then    
     echo "installation of mysql is failure"
@@ -15,7 +15,7 @@ else
     echo "installation of mysql is success"
 fi
 
-yum install postfixxx -y
+yum install postfix -y
 if [ $? -ne 0 ]
 then    
     echo "installation of postfix is failure"
