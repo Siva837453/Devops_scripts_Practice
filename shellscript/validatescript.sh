@@ -1,7 +1,7 @@
 #!/bin/bash
 DATE=$(date +%F-%H-%M-%S)
 SCRIPT_NAME=$(echo $0 | cut -d "." -f1)
-LOG_FILE=$SCRIPT_NAME-$DATE.log
+LOG_FILE=/tmp/$SCRIPT_NAME-$DATE.log
 
 
 
