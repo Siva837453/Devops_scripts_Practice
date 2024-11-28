@@ -5,6 +5,7 @@ LOG_FILE=/tmp/$SCRIPT_NAME-$DATE.log
 
 
 
+
 VALIDATE(){
     if [ $1 -ne 0 ]
     then
@@ -20,8 +21,8 @@ then
     exit 1
 fi
 
-yum install mysql -y
+yum install mysql -y &>>$LOGFILE
 VALIDATE $? "installing mysql"
 
-yum install postfix -y
+yum install postfix -y &>>$LOGFILE
 VALIDATE $? "installing postfix"
