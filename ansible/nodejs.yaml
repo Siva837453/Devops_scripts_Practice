@@ -1,0 +1,14 @@
+---
+- name: install postgresql
+  hosts: all
+  become: true
+  tasks:
+    - name: install postgre latest version
+      ansible.builtin.yum:
+        name: postgresql
+        state: latest
+    - name: start the postgresql service
+      ansible.builtin.service:
+        name: postgresql
+        state: started
+        
