@@ -1,6 +1,6 @@
 - name: Install nginx server nad start the service
   hosts: web
-  become: true
+  become: yes
   tasks:
   - name: install nginx
     ansible.builtin.apt:
