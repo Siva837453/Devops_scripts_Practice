@@ -8,5 +8,5 @@
       state: latest
   - name: start the service
     ansible.builtin.service:
-      name: naginx
+      name: nginx
       state: started
