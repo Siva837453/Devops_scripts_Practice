@@ -3,10 +3,9 @@
   become: true
   tasks:
   - name: install nginx
-    ansible.builtin.dnf:
+    ansible.builtin.apt:
       - name: nginx
         state: latest
-
   - name: start the service
     ansible.builtin.service:
       - name: naginx
