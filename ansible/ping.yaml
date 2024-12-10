@@ -1,0 +1,6 @@
+- name: ping the server
+  host: 54.91.97.59
+  become: true
+  tasks:
+    - name: ping the server
+      ansible.builting.ping:
