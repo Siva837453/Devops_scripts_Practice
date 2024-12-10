@@ -4,9 +4,9 @@
   tasks:
   - name: install nginx
     ansible.builtin.apt:
-      - name: nginx
-        state: latest
+      name: nginx
+      state: latest
   - name: start the service
     ansible.builtin.service:
-      - name: naginx
-        state: started
+      name: naginx
+      state: started
