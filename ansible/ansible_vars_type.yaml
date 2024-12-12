@@ -17,15 +17,15 @@
 
 # Task level variables
 
-- name: ansible paly level variables
+- name: ansible task level variables
   hosts: localhost
   become: true
   tasks:
-  - name: play level variables
+  - name: task level variables
     ansible.builtin.debug:
       msg: Hi im Siva good morning
 
-  - name: play level variables
+  - name: task level variables
     vars:
       TV: Samsung
       COST: 20000
@@ -34,16 +34,37 @@
 
 # variables from variables file
 
-- name: ansible paly level variables
+- name: ansible variables from vars file
   hosts: localhost
   become: true
   vars_files:
   - variables.yaml
   tasks:
-  - name: play level variables
+  - name: variables from vars file
     ansible.builtin.debug:
       msg: Hi im Siva good morning
 
-  - name: play level variables
+  - name: variables from vars file
     ansible.builtin.debug:
       msg: Hi studying {{CLASS}}, from {{VILLAGE}}, at {{SCHOOL}}
+
+# variables from prompt
+
+- name: ansible variables from prompt
+  hosts: localhost
+  become: true
+  vars_prompt:
+  - name: USERNAME
+    prompt: please enter username
+    private: false
+  - name: PASSWORD
+    prompt: please enter password 
+    private: true
+  tasks:
+  - name: variables from prompt
+    ansible.builtin.debug:
+      msg: Hi im Siva good morning
+
+  - name: variables from prompt
+    ansible.builtin.debug:
+      msg: username is  {{ USERNAME }} and password is {{ PASSWORD }}
