@@ -82,3 +82,17 @@
   - name: inventorylevel vars
     ansible.builtin.debug:
       msg: Hi working in {{ COMPANY }},i have {{ EXPERIENCE }} of experience.
+
+ # variables from command prompt
+
+- name: varibles from command prompt
+  hosts: web
+  become: true
+  tasks:
+  - name: command level vars
+    ansible.builtin.debug:
+      msg: Hi good morning im Siva
+
+  - name: command level vars
+    ansible.builtin.debug:
+      msg: im staying at {{ CITY }}    
