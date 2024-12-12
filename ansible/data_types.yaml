@@ -1,3 +1,4 @@
+# Data types
 - name: Dattypes
   hosts: localhost
   become: true
@@ -5,11 +6,11 @@
     AGE: 26
     NAME: Shivakumar
     isDevops: true
-    Skills:
+    Skills:  # list
       - AWS
       - DOCKER
       - K8s
-    EXPERIENCE:
+    EXPERIENCE:  #mapping
       - AWS: 2
       - DOCKER: 1
       - K8s: 1
