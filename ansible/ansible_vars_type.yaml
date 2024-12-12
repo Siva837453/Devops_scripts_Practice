@@ -31,3 +31,19 @@
       COST: 20000
     ansible.builtin.debug:
       msg: Hi im a purchase a {{ TV }}, cost of tv was {{ COST }}
+
+# variables from variables file
+
+- name: ansible paly level variables
+  hosts: localhost
+  become: true
+  vars_files:
+  - variables.yaml
+  tasks:
+  - name: play level variables
+    ansible.builtin.debug:
+      msg: Hi im Siva good morning
+
+  - name: play level variables
+    ansible.builtin.debug:
+      msg: Hi studying {{CLASS}}, from {{VILLAGE}}, at {{SCHOOL}}
