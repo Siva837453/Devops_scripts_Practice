@@ -1,0 +1,31 @@
+- name: Dattypes
+  hosts: localhost
+  become: true
+  vars:
+    AGE: 26
+    NAME: Shivakumar
+    isDevops: true
+    Skills:
+      - AWS
+      - DOCKER
+      - K8s
+    EXPERIENCE:
+      - AWS: 2
+      - DOCKER: 1
+      - K8s: 1
+  tasks:
+  - name: print number variable
+    ansible.builtin.debug:
+      msg: HI im {{ AGE }} old
+  - name: print string variable
+    ansible.builtin.debug:
+      msg: Hi my name is {{ NAME }}
+  - name: print boolan variable
+    ansible.builtin.debug:
+      msg: Hi this {{ isDevops }}
+  - name: print list
+    ansible.builtin.debug:
+      msg: Hi this is {{ Skills }}
+  - name: print mapping 
+    ansible.builtin.debug:
+      msg: this is {{ eEXPERIENCE }}
