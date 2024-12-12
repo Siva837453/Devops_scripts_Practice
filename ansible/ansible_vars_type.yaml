@@ -68,3 +68,17 @@
   - name: variables from prompt
     ansible.builtin.debug:
       msg: username is  {{ USERNAME }} and password is {{ PASSWORD }}
+
+# variables from inventory file
+
+- name: Inventory level variables
+  hosts: localhost
+  become: true
+  tasks:
+  - name: inventory level vars
+    ansible.builtin.debug:
+      msg: Hi good morning im Siva
+
+  - name: inventorylevel vars
+    ansible.builtin.debug:
+      msg: Hi working in {{ COMPANY }},i have {{ EXPERIENCE }} of experience.
