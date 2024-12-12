@@ -72,7 +72,7 @@
 # variables from inventory file
 
 - name: Inventory level variables
-  hosts: localhost
+  hosts: web
   become: true
   tasks:
   - name: inventory level vars
