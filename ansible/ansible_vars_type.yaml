@@ -12,4 +12,4 @@
 
   - name: play level variables
     ansible.builtin.debug:
-      msg: Hi im a {{ STUDENT }} learning {{ CCOURSE }} and duration is {{ DURATION }}
+      msg: Hi im a {{ STUDENT }} learning {{ COURSE }} and duration is {{ DURATION }}
