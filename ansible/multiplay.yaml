@@ -1,0 +1,16 @@
+- name: multiplay tasks
+  hosts: localhost
+  become: true
+  tasks:
+  - name: paly1 and task1
+    ansible.builtin.debug:
+      msg: Hi im from play1 and task 1
+
+- name: second paly 
+  hosts: localhost
+  become: true
+  tasks:
+  - name: play2 task2
+    ansible.builtin.debug:
+      msg: Hi im from play2 task 2
+      
