@@ -25,7 +25,7 @@
       msg: Hi this {{ isDevops }}
   - name: print list
     ansible.builtin.debug:
-      msg: Hi this is {{ Skills }}
+      msg: Hi im skilled in {{ Skills }}
   - name: print mapping 
     ansible.builtin.debug:
-      msg: this is {{ EXPERIENCE }}
+      msg: i have experience in {{ EXPERIENCE }}
