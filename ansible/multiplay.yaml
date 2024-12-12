@@ -13,4 +13,5 @@
   - name: play2 task2
     ansible.builtin.debug:
       msg: Hi im from play2 task 2
-      
+
+
