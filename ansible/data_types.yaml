@@ -28,4 +28,4 @@
       msg: Hi this is {{ Skills }}
   - name: print mapping 
     ansible.builtin.debug:
-      msg: this is {{ eEXPERIENCE }}
+      msg: this is {{ EXPERIENCE }}
