@@ -22,12 +22,12 @@
   become: true
   tasks:
   - name: play level variables
-    vars:
-      TV: Samsung
-      COST: 20000
     ansible.builtin.debug:
       msg: Hi im Siva good morning
 
   - name: play level variables
+    vars:
+      TV: Samsung
+      COST: 20000
     ansible.builtin.debug:
       msg: Hi im a purchase a {{ TV }}, cost of tv was {{ COST }}
