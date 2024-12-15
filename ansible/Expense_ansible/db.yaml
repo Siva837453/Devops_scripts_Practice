@@ -19,7 +19,7 @@
     login_password: ExpenseApp@1
     login_host: sdevops.cloud
     ignore_errors: yes
-    register: {{mysql_connection_output}}
+    register: "{{mysql_connection_output}}"
 
   - name: print the output of db connection
     ansible.builtin.debug:
