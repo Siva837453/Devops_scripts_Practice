@@ -1,0 +1,12 @@
+- name: loops
+  hosts: localhost
+  become: true
+  tasks: 
+  - name: print the looping names
+    ansible.builtin.debug:
+      msg: Hi im learning {{item}}
+    loop:
+    - DevOps
+    - Terraform
+    - Docker
+    - ansible
