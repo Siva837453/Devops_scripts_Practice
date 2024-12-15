@@ -11,3 +11,7 @@
     ansible.builtin.debug:
       msg: user_info
 
+  - name: create Expense user
+    ansible.builtin.user:
+      name: Expense
+    when: user_info.rc != 0
