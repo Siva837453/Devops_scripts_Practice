@@ -15,7 +15,7 @@
 
   - name: check db connection
     community.mysql.mysql_db:
-      login_user: ec2-user
+      login_user: root
       login_password: ExpenseApp@1
       login_host: sdevops.cloud 
     ignore_errors: yes
@@ -24,5 +24,9 @@
   - name: print the output of db connection
     ansible.builtin.debug:
       msg: "{{mysql_connection_output}}"
+
+  # - name: set password
+  #   ansible.builtin.command: mysql_secure_installation --set-root-pass ExpenseApp@1
+
 
     
