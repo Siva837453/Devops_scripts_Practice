@@ -9,7 +9,7 @@
 
   - name: print exit status
     ansible.builtin.debug:
-      msg: {{user_info.rc}}
+      msg: "{{ user_info.rc }}"
 
   - name: create Expense user
     ansible.builtin.user:
