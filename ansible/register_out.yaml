@@ -1,0 +1,13 @@
+- name: regiter output
+  hosts: localhost
+  become: true
+  tasks:
+  - name: check the user avaiable or not
+    ansible.builtin.command: id Expense
+    register: user_info
+    ignore_errors: true
+
+  - name: print exit status
+    ansible.builtin.debug:
+      msg: user_info
+
