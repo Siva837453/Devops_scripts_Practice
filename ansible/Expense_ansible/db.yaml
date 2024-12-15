@@ -1,0 +1,28 @@
+- name: db configuration
+  hosts: db
+  become: true
+  tasks:
+  - name: install mysql server
+    ansible.builtin.dnf:
+      name: mysql-server
+      state: latest
+
+  - name: enable the service
+    ansible.builtin.service:
+      name: mysqld
+      state: started
+      enabled: yes
+
+  - name: check db connection
+    community.mysql.mysql_db:
+    login_user: ec2-user
+    login_password: ExpenseApp@1
+    login_host: sdevops.cloud
+    ignore_errors: yes
+    register: {{mysql_connection_output}}
+
+  - name: print the output of db connection
+    ansible.builtin.debug:
+      msg: "{{mysql_connection_output}}"
+
+    
