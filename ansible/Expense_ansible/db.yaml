@@ -15,9 +15,9 @@
 
   - name: check db connection
     community.mysql.mysql_db:
-    login_user: ec2-user
-    login_password: ExpenseApp@1
-    login_host: sdevops.cloud
+      login_user: ec2-user
+      login_password: ExpenseApp@1
+      login_host: sdevops.cloud 
     ignore_errors: yes
     register: "{{mysql_connection_output}}"
 
