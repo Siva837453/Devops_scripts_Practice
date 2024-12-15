@@ -1,0 +1,13 @@
+- name: install Packages and dependecies
+  hosts: localhost
+  become: true
+  tasks:
+  - name: install and restart
+    ansible.builtin.dnf:
+      name: {{ item.NAME }}
+      state: {{ item.STATUS}}
+
+    loop:
+    - { NAME: 'Mysql', STATUS: 'Latest'}
+    - { NAME: 'NGINX', STATUS: 'Latest'}
+    - { NAME: 'postfix', STATUS: 'Latest'}
