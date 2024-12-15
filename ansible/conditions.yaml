@@ -2,7 +2,7 @@
   hosts: localhost
   become: true
   vars:
-    NAME: DevOps
+    NAME: DevOps-1
   tasks:
   - name: run this if name is DevOps
     ansible.builtin.debug:
