@@ -1,6 +1,10 @@
 - name: db configuration
   hosts: db
   become: true
+  vars:
+  - name: mysql_root_password
+    prompt: please enter password
+    private: no
   tasks:
   - name: install mysql server
     ansible.builtin.dnf:
@@ -23,8 +27,8 @@
   - name: check db connection
     community.mysql.mysql_db:
       login_user: root
-      login_password: ExpenseApp@1
-      login_host: sdevops.cloud 
+      login_password: "{{mysql_root_password}}"
+      login_host: db.sdevops.cloud 
     ignore_errors: yes
     register: mysql_connection_output
 
@@ -32,8 +36,10 @@
     ansible.builtin.debug:
       msg: "{{mysql_connection_output}}"
 
-  # - name: set password
-  #   ansible.builtin.command: mysql_secure_installation --set-root-pass ExpenseApp@1
+  - name: set password
+    ansible.builtin.command: mysql_secure_installation --set-root-pass {{mysql_root_password}}
+    when: mysql_connection_output.failed is true
+
 
 
     
