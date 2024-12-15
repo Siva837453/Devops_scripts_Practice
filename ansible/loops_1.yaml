@@ -4,8 +4,8 @@
   tasks:
   - name: install and restart
     ansible.builtin.dnf:
-      name: {{ item.NAME }}
-      state: {{ item.STATUS }}
+      name: "{{ item.NAME }}"
+      state: "{{ item.STATUS }}"
 
     loop:
     - { NAME: 'Mysql', STATUS: 'Latest'}
