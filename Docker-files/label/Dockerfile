@@ -3,7 +3,6 @@ RUN dnf install nginx -y
 LABEL course="Docker"\
       duration="100hrs"\
       student="Siva"
-CMD [ "nginx","-g","daemon off"; ] 
+CMD [ "nginx","-g","daemon off;" ] 
 
 
-      
