@@ -9,6 +9,7 @@
 # CMD [ "nginx","-g","daemon off;" ] 
 
 FROM almalinux:9
-CMD [ "ping", "-c5", "google.com"] 
+ENTRYPOINT [ "ping","-c5" ]
+CMD [  "google.com"] 
 
 
